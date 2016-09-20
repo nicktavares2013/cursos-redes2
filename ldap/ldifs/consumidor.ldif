@@ -1,0 +1,17 @@
+dn: olcDatabase={1}mdb,cn=config
+changetype: modify
+add: olcDbIndex
+olcDbIndex: entryCSN eq
+-
+add: olcDbIndex
+olcDbIndex: entryUUID eq
+-
+replace: olcSyncrepl
+olcSyncrepl: rid=101
+  provider="ldap://ldap.dominio.com.br:389/"
+  type=refreshOnly
+  interval=00:00:00:10
+  searchbase="dc=dominio,dc=com,dc=br"
+  bindmethod=simple
+  binddn="cn=replicador,dc=dominio,dc=com,dc=br"
+  credentials=elaborata

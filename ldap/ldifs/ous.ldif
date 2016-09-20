@@ -1,0 +1,20 @@
+dn: ou=Usuarios,dc=dominio,dc=com,dc=br
+objectClass: organizationalUnit
+ou: Usuarios
+#objectClass: top
+
+dn: ou=Contatos,dc=dominio,dc=com,dc=br
+ou:  Contatos
+objectClass: organizationalUnit
+
+dn: ou=grupos,dc=dominio,dc=com,dc=br
+ou:  grupos
+objectClass: organizationalUnit
+
+dn: ou=Computadores,dc=dominio,dc=com,dc=br
+ou:  Computadores
+objectClass: organizationalUnit
+
+dn: ou=Servicos,dc=dominio,dc=com,dc=br
+ou:  Servicos
+objectClass: organizationalUnit

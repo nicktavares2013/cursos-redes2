@@ -1,0 +1,22 @@
+dn: olcDatabase={1}mdb,cn=config
+changetype: modify
+add: olcAccess
+olcAccess: to attrs=userPassword by dn.exact="cn=pesquisador,dc=dominio,dc=com,dc=br" read by dn.exact="cn=replicador,dc=dominio,dc=com,dc=br" read  by anonymous auth by self write by * none
+-
+add: olcAccess
+olcAccess: to attrs=shadowLastChange by dn="cn=pesquisador,dc=dominio,dc=com,dc=br" read by dn="cn=replicador,dc=dominio,dc=com,dc=br" read by self write by anonymous auth by users read by * none
+-
+add: olcAccess
+olcAccess: to attrs=uidNumber,gidNumber,loginShell,homeDirectory by dn="cn=pesquisador,dc=dominio,dc=com,dc=br" read by dn="cn=replicador,dc=dominio,dc=com,dc=br" read by self read by users read by anonymous auth by * none
+-
+add: olcAccess
+olcAccess: to dn.subtree="ou=Computadores,dc=dominio,dc=com,dc=br" by group="cn=Domain Admins,ou=Grupos,dc=dominio,dc=com,dc=br" write by group="cn=Account Operators,ou=Grupos,dc=dominio,dc=com,dc=br" write by users read by anonymous auth by * none
+-
+add: olcAccess
+olcAccess: to dn.subtree="ou=Contatos,dc=dominio,dc=com,dc=br" attrs=uidNumber,gidNumber,uid by * none
+-
+add: olcAccess
+olcAccess: to dn.subtree="ou=Contatos,dc=dominio,dc=com,dc=br" by dn="cn=pesquisador,dc=dominio,dc=com,dc=br" read by dn="cn=replicador,dc=dominio,dc=com,dc=br" read by self write by users write by * none
+-
+add: olcAccess
+olcAccess: to dn.subtree="dc=dominio,dc=com,dc=br" by dn.exact="cn=pesquisador,dc=dominio,dc=com,dc=br" read by dn.exact="cn=replicador,dc=dominio,dc=com,dc=br" read by self write by users read by anonymous auth by * none

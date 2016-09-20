@@ -1,0 +1,4 @@
+dn: olcDatabase={1}mdb,cn=config
+changetype: modify
+#Exclui as bases caso jáenham sido criadas, caso contráo comente essas linhas
+delete: olcAccess

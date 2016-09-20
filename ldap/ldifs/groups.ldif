@@ -1,0 +1,4 @@
+dn: cn=DTI,ou=Grupos,dc=dominio,dc=com,dc=br
+cn: DTI
+objectClass: groupOfNames
+member: cn=admin,dc=dominio,dc=com,dc=br
