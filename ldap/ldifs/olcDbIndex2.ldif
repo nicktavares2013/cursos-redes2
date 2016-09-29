@@ -1,0 +1,2 @@
+olcAccess: {0}to *  by dn="uid=LDAP Replicator,ou=System Accounts,dc=hpp,dc=or
+ g,dc=br" write

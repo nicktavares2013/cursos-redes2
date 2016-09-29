@@ -1,0 +1,8 @@
+olcAccess: to attrs=userPassword,SambaLMPassword,SambaNTPassword,sambaPwdLa
+ stSet,sambaPwdMustChange,sambaPasswordHistory,shadowLastChange  by dn.base="c
+ n=admin,dc=hpp,dc=org,dc=br" write  by dn.base="uid=LDAP Replicator,ou=System
+  Accounts,dc=hpp,dc=org,dc=br" read  by anonymous auth  by self write  by * n
+ one
+olcAccess: to dn.base=""  by * read
+olcAccess: to *  by dn.base="cn=admin,dc=hpp,dc=org,dc=br" write  by * read
+

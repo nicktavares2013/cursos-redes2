@@ -1,15 +1,15 @@
-dn: cn=Pesquisador,dc=dominio,dc=com,dc=br
-cn: Pesquisador
-description: Usuario para pesquisas autenticadas no diretorio
-objectClass: organizationalRole
-objectClass: simpleSecurityObject
-objectClass: top
-userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==
+#dn: cn=Pesquisador,dc=dominio,dc=com,dc=br
+#cn: Pesquisador
+#description: Usuario para pesquisas autenticadas no diretorio
+#objectClass: organizationalRole
+#objectClass: simpleSecurityObject
+#objectClass: top
+#userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==
 
-dn: cn=Replicador,dc=dominio,dc=com,dc=br
-cn: Replicador
+dn: uid=LDAP Replicador,ou=System Accounts,dc=dominio,dc=com,dc=br
+cn: LDAP Replicador
 description: Usuario para replicacao do diretorio
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
 objectClass: top
-userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==
+userPassword: 

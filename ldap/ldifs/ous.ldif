@@ -1,20 +1,24 @@
-dn: ou=Usuarios,dc=dominio,dc=com,dc=br
+dn: ou=People,dc=dominio,dc=com,dc=br
 objectClass: organizationalUnit
-ou: Usuarios
+ou: People
 #objectClass: top
 
-dn: ou=Contatos,dc=dominio,dc=com,dc=br
-ou:  Contatos
+dn: ou=Groups,dc=dominio,dc=com,dc=br
+ou:  Groups
 objectClass: organizationalUnit
 
-dn: ou=grupos,dc=dominio,dc=com,dc=br
-ou:  grupos
+dn: ou=Computers,dc=dominio,dc=com,dc=br
+ou: Computers
 objectClass: organizationalUnit
 
-dn: ou=Computadores,dc=dominio,dc=com,dc=br
-ou:  Computadores
+dn: ou=Services,dc=dominio,dc=com,dc=br
+ou: Services
 objectClass: organizationalUnit
 
-dn: ou=Servicos,dc=dominio,dc=com,dc=br
-ou:  Servicos
+dn: ou=System Accounts,dc=dominio,dc=com,dc=br
+ou: System Accounts
+objectClass: organizationalUnit
+
+dn: ou=Proxy,ou=Services,dc=dominio,dc=com,dc=br
+ou: Proxy
 objectClass: organizationalUnit
